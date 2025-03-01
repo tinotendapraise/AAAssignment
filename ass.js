@@ -56,3 +56,16 @@ console.log("The expression !(4>3 &&10<12) is", !(4 > 3 && 10 < 12));
 
 console.log("The expression !(4>3 &&10>12) is", !(4 > 3 && 10 > 12));
 console.log("The expression !(4==='4') is", !(4 === "4"));
+
+/*let base = prompt("Enter base");
+let height = prompt("Enter height");
+let area = 0.5 * base * height;
+console.log("The area is", area);*/
+
+let birthYear = prompt("What is your birth year?");
+let currentYear = new Date().getFullYear(); //code to get the current year
+userAge = currentYear - birthYear;
+
+if (userAge >= 18) {
+  alert(`You are ${userAge}. You are old enough to drive`);
+}
