@@ -18,7 +18,7 @@ console.log(typeof 10 === typeof "10");
 console.log(parseInt("9.8") === 10);
 
 if (1) {
-  console.log("This is a truthy valu");
+  console.log("This is a truthy value");
 } //1 is a truthy valu
 if (" ") {
   console.log("This a is truthy value");
@@ -28,11 +28,31 @@ if ([]) {
 }
 
 if (0) {
-  console.log("This is a falsey value ");
+  console.log("This is a falsey value "); //this will not print on the console hence a falsey value
+} else {
+  console.log("0 is falsey");
 }
+
 if (null) {
-  console.log("This is a falsey value");
+  console.log("This is a falsey value"); //this will not print on the console hence a falsey value
+} else {
+  console.log("null is falsey");
 }
+
 if ("") {
-  console.log("This is a falsey value");
+  console.log("This is a falsey value"); //this will not print on the console hence a falsey value
+} else {
+  console.log("Empty space is falsey");
 }
+
+console.log("The expression 4>3 && 10<12 is", 4 > 3 && 10 < 12);
+console.log("The expression 4>3&& 10>12 is", 4 > 3 && 10 > 12);
+console.log("The expression 4>3||10<12 is", 4 > 3 || 10 < 12);
+console.log("The expression 4>3||10>12 is", 4 > 3 || 10 > 12);
+console.log("The expression !(4>3) is", !(4 > 3));
+console.log("The expression!(4<3) is ", !(4 < 3));
+console.log("The expression !(false)", !false);
+console.log("The expression !(4>3 &&10<12) is", !(4 > 3 && 10 < 12));
+
+console.log("The expression !(4>3 &&10>12) is", !(4 > 3 && 10 > 12));
+console.log("The expression !(4==='4') is", !(4 === "4"));
