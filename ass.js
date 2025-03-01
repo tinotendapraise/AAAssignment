@@ -62,10 +62,66 @@ let height = prompt("Enter height");
 let area = 0.5 * base * height;
 console.log("The area is", area);*/
 
-let birthYear = prompt("What is your birth year?");
+/*let birthYear = prompt("What is your birth year?");
 let currentYear = new Date().getFullYear(); //code to get the current year
-userAge = currentYear - birthYear;
+let userAge = currentYear - birthYear;
+let descrepency = 18 - userAge;
 
 if (userAge >= 18) {
   alert(`You are ${userAge}. You are old enough to drive`);
+} else {
+  alert(`You are ${userAge}, you will be allowed to drive in ${descrepency}`);
+}*/
+
+let challenge = "30 Days Of JavaScript";
+console.log(challenge.toUpperCase());
+console.log(challenge.toLowerCase());
+console.log(challenge.slice("days"));
+console.log(challenge.slice("Days of JavaScript"));
+console.log(challenge.includes("Script"));
+console.log(challenge.indexOf("a"));
+console.log(challenge.lastIndexOf("a"));
+
+let stringVar =
+  "You cannot end a sentence wit because because because is a conjunction";
+console.log(stringVar.indexOf("because"));
+
+console.log(challenge.startsWith("30"));
+console.log(challenge.endsWith("JavaScript"));
+
+const randomNum = Math.floor(Math.random() * 101);
+console.log(randomNum);
+
+let a = 7;
+let b = 6;
+
+//using if else
+if (a > b) {
+  console.log("a is greater than b");
+} else {
+  console.log("a is less than b");
 }
+
+// using tenary operator
+let isgreaterthan = true;
+isgreaterthan
+  ? console.log("a is greater than b")
+  : console.log("a is less than b");
+
+let scores = 35;
+let grade;
+
+if (scores >= 80 && scores <= 100) {
+  grade = "A";
+} else if (scores >= 70 && scores <= 89) {
+  grade = "B";
+} else if (scores >= 60 && scores <= 69) {
+  grade = "C";
+} else if (scores >= 50 && scores <= 59) {
+  grade = "D";
+} else if (scores >= 0 && scores <= 49) {
+  grade = "F";
+} else {
+  grade = "invalid";
+}
+console.log("Grade:", grade);
